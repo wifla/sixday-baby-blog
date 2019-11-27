@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta charset="utf-8">
+  <title>sixdayBabay</title>
+  <!-- <link rel="shortcut icon" href="./static/images/icon.png" type="image/x-icon"> -->
+</head>
+<style type="text/css"> 
+  html{
+    font-size: 75px;
+  }
+</style>
+<script>
+  //动态调整html font-size大小
+  (function() {
+      resizeFont();
+
+      function resizeFont() {
+          var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+          var htmlDom = document.getElementsByTagName("html")[0];
+          htmlDom.style.fontSize = htmlWidth / 10 + "px";
+      }
+      window.onresize = function() {
+          resizeFont();
+      }
+  })()
+</script>
+<body>
+  <div id="app">
+  
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
